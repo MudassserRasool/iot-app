@@ -1,0 +1,263 @@
+<div class="container formPage">
+  <div class="formHeading">Add New Equipment</div>
+
+  <form class="row mt-4">
+    <!-- start Equipment ID input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Equipment ID
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Factory Name"
+        [formControl]="equipmentId"
+      />
+      <mat-error *ngIf="equipmentId.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Equipment ID input--------------------------- -->
+
+    <!-- start Serial No input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Serial No
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Serial No"
+        [formControl]="serialNumber"
+      />
+      <mat-error *ngIf="serialNumber.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Serial No input--------------------------- -->
+
+    <!-- start factory selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Factory
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="factory">
+        <mat-option value="factory-1">factory-1</mat-option>
+        <mat-option value="factory-2">factory-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="factory.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end factory selector--------------------------- -->
+
+    <!-- start group selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Group
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="group">
+        <mat-option value="Group-1">Group-1</mat-option>
+        <mat-option value="Group-2">Group-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="group.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end group selector--------------------------- -->
+
+    <!-- start Line configuration--------------------------- -->
+    <div class="col col-md-6">
+      <div class="checkBoxHeading">Line Configuration</div>
+      <mat-checkbox class="checkBoxLabel">Attached To Line?</mat-checkbox>
+    </div>
+    <!-- end Line configuration--------------------------- -->
+
+    <!-- start Equipment Type selector--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label>
+        Equipment Type
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <mat-select [formControl]="equipmentType">
+        <mat-option value="Group-1">Equipment Type-1</mat-option>
+        <mat-option value="Group-2">Equipment Type-2</mat-option>
+      </mat-select>
+      <mat-error *ngIf="equipmentType.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Equipment Type selector--------------------------- -->
+
+    <!-- start Set up Minutes input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Set up Minutes
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Description"
+        [formControl]="setUpMints"
+      />
+      <mat-error *ngIf="setUpMints.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Set up Minutes input--------------------------- -->
+
+    <!-- start Sort Order input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Sort Order
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Description"
+        [formControl]="sortOrder"
+      />
+      <mat-error *ngIf="sortOrder.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Sort Order input--------------------------- -->
+
+    <!-- start Make input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Make
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Make" [formControl]="make" />
+      <mat-error *ngIf="make.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Make input--------------------------- -->
+
+    <!-- start Model input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Model
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Sort Model" [formControl]="model" />
+      <mat-error *ngIf="model.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Model input--------------------------- -->
+
+    <!-- start Year input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Year
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Year Built" [formControl]="year" />
+      <mat-error *ngIf="year.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Year input--------------------------- -->
+
+    <!-- start Availability Threshold input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Availability Threshold
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Model"
+        [formControl]="availabilityThreshold"
+      />
+      <mat-error *ngIf="availabilityThreshold.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Availability Threshold input--------------------------- -->
+
+    <!-- start Quality Threshold input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Quality Threshold
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input
+        matInput
+        placeholder="Enter Quality"
+        [formControl]="qualityThreshold"
+      />
+      <mat-error *ngIf="qualityThreshold.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Quality Threshold input--------------------------- -->
+
+    <!-- start Tonnage/Capacity input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Tonnage/Capacity
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Tonnage/Capacity" [formControl]="tonnage" />
+      <mat-error *ngIf="tonnage.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Tonnage/Capacity input--------------------------- -->
+
+    <!-- start Device ID input--------------------------- -->
+    <mat-form-field class="col col-md-6" appearance="outline">
+      <mat-label
+        >Device ID
+        <img src="../../../assets/InputInfoIcon.png" alt="info" />
+      </mat-label>
+      <input matInput placeholder="Enter Device ID" [formControl]="deviceId" />
+      <mat-error *ngIf="deviceId.hasError('required')"
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+    <!-- end Device ID input--------------------------- -->
+
+    <!-- start Dormant--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel">Dormant</mat-checkbox>
+    </div>
+    <!-- end Dormant--------------------------- -->
+
+    <!-- start Gateway Connected--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel">Gateway Connected</mat-checkbox>
+    </div>
+    <!-- end Gateway Connected--------------------------- -->
+
+    <!-- start Camera Connected--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel">Camera Connected</mat-checkbox>
+    </div>
+    <!-- end Camera Connected--------------------------- -->
+
+    <!-- start Robot Connected--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel">Robot Connected</mat-checkbox>
+    </div>
+    <!-- end Robot Connected--------------------------- -->
+
+    <!-- start Energy Meter Connected--------------------------- -->
+    <div class="col col-md-6">
+      <mat-checkbox class="checkBoxLabel">Energy Meter Connected</mat-checkbox>
+    </div>
+    <!-- end Energy Meter Connected--------------------------- -->
+    <!-- start buttons-------------------------------------------- -->
+    <div class="d-flex justify-content-end gap-2">
+      <app-reuseable-form-cancel-button></app-reuseable-form-cancel-button>
+      <app-reuseable-form-add-button></app-reuseable-form-add-button>
+    </div>
+    <!-- end buttons-------------------------------------------- -->
+  </form>
+</div>

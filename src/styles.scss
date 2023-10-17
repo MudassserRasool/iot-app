@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --caption-medium: Poppins;
+    --font-audiowide: Audiowide;
+  
+    /* font sizes */
+    --caption-medium-size: 12px;
+    --font-size-5xs: 8px;
+    --font-size-3xs: 10px;
+    --headline-size: 16px;
+    --font-size-2xs: 11px;
+    --font-size-mini: 15px;
+    --font-size-lg: 18px;
+    --font-size-sm: 14px;
+    --font-size-9xl: 28px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --white: #fff;
+    --color-gray-100: #949494;
+    --color-gray-200: #797979;
+    --primary-dark-1: #242731;
+    --black-100: #1c1d22;
+    --color-gray-300: #060606;
+    --color-gray-400: rgba(0, 0, 0, 0.08);
+    --color-gray-500: rgba(255, 255, 255, 0.34);
+    --color-gray-600: rgba(0, 0, 0, 0.25);
+    --black-60: #45464e;
+    --color-mediumslateblue: #7b61ff;
+    --color-gold: rgba(246, 204, 13, 0.1);
+    --black-10: #bec0ca;
+    --primary-100: #5570f1;
+    --color-ghostwhite: #eef0fa;
+    --black-20: #a6a8b1;
+    --color-darkgray-100: #9a9a9a;
+    --color-forestgreen-100: #1a932e;
+    --color-black: #000;
+    --color-coral: #e76534;
+    --color-goldenrod: #e8b73a;
+    --color-slategray: #787486;
+    --red: #ff3b30;
+    --secondary: #7c8db5;
+    --indigo: #347ae2;
+  
+    /* Gaps */
+    --gap-8xs: 5px;
+    --gap-lgi: 19px;
+    --gap-3xs: 10px;
+    --gap-9xs: 4px;
+    --gap-xl: 20px;
+    --gap-9xl: 28px;
+    --gap-50xl: 69px;
+    --gap-xs: 12px;
+  
+    /* Paddings */
+    --padding-lg: 10px;
+    --padding-24xl: 3px;
+    --padding-5xl: 14px;
+    --padding-xs: 12px;
+    --padding-10xs: 3px;
+    --padding-7xs-5: 5.5px;
+  
+    /* Border radiuses */
+    --br-sm: 14px;
+    --br-31xl: 50px;
+    --br-7xl: 26px;
+    --br-mid: 17px;
+    --br-11xs: 2px;
+  
+    /* Effects */
+    --effectt: 4px 4px 10px 6px rgba(0, 0, 0, 0.25);
+  }
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+// @import '~@angular/material/prebuilt-themes/purple-green.css';
+// @import '~@angular/material/prebuilt-themes/indigo-amber.css';
